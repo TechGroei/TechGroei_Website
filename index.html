@@ -19,6 +19,7 @@
         <nav aria-label="Primary navigation">
             <a href="#services">Services</a>
             <a href="#engagements">Engagements</a>
+            <a href="one_slider_capabilities.html" target="_blank">Capabilities</a>
             <a href="#proof">Experience</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -37,7 +38,7 @@
                 <div class="hero-actions">
                     <a href="mailto:techgroei@gmail.com?subject=TechGroei%20discovery%20call" class="btn">Book a
                         discovery call</a>
-                    <a href="#services" class="btn btn-quiet">Explore services</a>
+                    <a href="one_slider_capabilities.html" target="_blank" class="btn btn-quiet">View Capabilities</a>
                 </div>
             </div>
             <figure class="hero-visual">
@@ -202,6 +203,57 @@
             <span>Email: techgroei@gmail.com</span>
         </div>
     </footer>
+    <div id="capabilities-modal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-content">
+                <iframe src="one_slider_capabilities.html"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('capabilities-modal');
+            const closeBtn = document.querySelector('.modal-close');
+            const modalTriggerSelectors = [
+                'a[href="one_slider_capabilities.html"]',
+                '.btn-quiet[href="one_slider_capabilities.html"]'
+            ];
+
+            function openModal(e) {
+                e.preventDefault();
+                modal.classList.add('is-open');
+                document.body.classList.add('modal-open');
+                modal.setAttribute('aria-hidden', 'false');
+            }
+
+            function closeModal() {
+                modal.classList.remove('is-open');
+                document.body.classList.remove('modal-open');
+                modal.setAttribute('aria-hidden', 'true');
+            }
+
+            // Attach event listeners to all triggers
+            modalTriggerSelectors.forEach(selector => {
+                document.querySelectorAll(selector).forEach(trigger => {
+                    trigger.addEventListener('click', openModal);
+                });
+            });
+
+            if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+            // Close on click outside the container
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeModal();
+            });
+
+            // Close on Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closeModal();
+            });
+        });
+    </script>
 </body>
 
 </html>
