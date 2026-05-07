@@ -216,13 +216,20 @@
         document.addEventListener('DOMContentLoaded', () => {
             const modal = document.getElementById('capabilities-modal');
             const closeBtn = document.querySelector('.modal-close');
-            const modalTriggerSelectors = [
-                'a[href="one_slider_capabilities.html"]',
-                '.btn-quiet[href="one_slider_capabilities.html"]'
-            ];
+            
+            // More robust selector: any link ending with the filename
+            const triggers = document.querySelectorAll('a[href$="one_slider_capabilities.html"]');
+
+            if (!modal) {
+                console.error('TechGroei: Capabilities modal element not found.');
+                return;
+            }
+
+            console.log(`TechGroei: Found ${triggers.length} modal triggers.`);
 
             function openModal(e) {
                 e.preventDefault();
+                console.log('TechGroei: Opening capabilities modal...');
                 modal.classList.add('is-open');
                 document.body.classList.add('modal-open');
                 modal.setAttribute('aria-hidden', 'false');
@@ -234,21 +241,16 @@
                 modal.setAttribute('aria-hidden', 'true');
             }
 
-            // Attach event listeners to all triggers
-            modalTriggerSelectors.forEach(selector => {
-                document.querySelectorAll(selector).forEach(trigger => {
-                    trigger.addEventListener('click', openModal);
-                });
+            triggers.forEach(trigger => {
+                trigger.addEventListener('click', openModal);
             });
 
             if (closeBtn) closeBtn.addEventListener('click', closeModal);
 
-            // Close on click outside the container
             modal.addEventListener('click', (e) => {
                 if (e.target === modal) closeModal();
             });
 
-            // Close on Escape key
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape') closeModal();
             });
