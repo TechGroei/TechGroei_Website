@@ -61,12 +61,19 @@
             </div>
             <div class="offer-grid">
                 <article class="offer-card">
-                    <span class="card-kicker">01</span>
+                    <div class="offer-card-head">
+                        <span class="card-kicker">01</span>
+                        <span class="offer-type">Audit</span>
+                    </div>
                     <h3>Architecture & Maturity Audit</h3>
                     <p>
                         A focused review of your cloud, data, or AI architecture with risks, gaps, quick wins, and a
                         practical 30-day roadmap.
                     </p>
+                    <div class="offer-outcome">
+                        <span>Output</span>
+                        <strong>Risk view + 30-day roadmap</strong>
+                    </div>
                     <ul>
                         <li>Current-state review</li>
                         <li>Risk and bottleneck assessment</li>
@@ -76,12 +83,19 @@
                     <strong>Typical timeline: 1 to 2 weeks</strong>
                 </article>
                 <article class="offer-card">
-                    <span class="card-kicker">02</span>
+                    <div class="offer-card-head">
+                        <span class="card-kicker">02</span>
+                        <span class="offer-type">Sprint</span>
+                    </div>
                     <h3>GenAI Prototype Sprint</h3>
                     <p>
                         A short sprint that turns an AI idea into a working demo, architecture note, feasibility view,
                         and next-step delivery plan.
                     </p>
+                    <div class="offer-outcome">
+                        <span>Output</span>
+                        <strong>Working demo + feasibility plan</strong>
+                    </div>
                     <ul>
                         <li>Use-case clarification</li>
                         <li>Small working prototype</li>
@@ -91,12 +105,19 @@
                     <strong>Typical timeline: 2 to 4 weeks</strong>
                 </article>
                 <article class="offer-card">
-                    <span class="card-kicker">03</span>
+                    <div class="offer-card-head">
+                        <span class="card-kicker">03</span>
+                        <span class="offer-type">Support</span>
+                    </div>
                     <h3>Senior Architecture Support</h3>
                     <p>
                         Senior technical direction for teams that need cloud, data, and AI decisions reviewed, shaped,
                         and moved forward with delivery discipline.
                     </p>
+                    <div class="offer-outcome">
+                        <span>Output</span>
+                        <strong>Decisions, reviews, and handover</strong>
+                    </div>
                     <ul>
                         <li>Architecture decisions and reviews</li>
                         <li>Technical roadmap creation</li>
@@ -121,7 +142,8 @@
                         Reviews a system description for architecture, data, security, operational, and production
                         readiness risks.
                     </p>
-                    <a href="mailto:office@techgroei.com?subject=Automated%20Architectural%20Reviewer%20demo">Discuss this demo</a>
+                    <a href="mailto:office@techgroei.com?subject=Automated%20Architectural%20Reviewer%20demo">Discuss
+                        this demo</a>
                 </article>
                 <article>
                     <span>AI readiness</span>
@@ -138,7 +160,8 @@
                         Turns documents into summaries, key entities, risks, questions, and structured output for
                         downstream workflows.
                     </p>
-                    <a href="mailto:office@techgroei.com?subject=Document-to-Insight%20Workflow%20demo">Discuss this demo</a>
+                    <a href="mailto:office@techgroei.com?subject=Document-to-Insight%20Workflow%20demo">Discuss this
+                        demo</a>
                 </article>
                 <article>
                     <span>AI operations</span>
@@ -147,7 +170,8 @@
                         Shows how teams can monitor AI workflows, review outputs, manage exceptions, and keep humans in
                         control.
                     </p>
-                    <a href="mailto:office@techgroei.com?subject=AI%20Workflow%20Control%20Tower%20demo">Discuss this demo</a>
+                    <a href="mailto:office@techgroei.com?subject=AI%20Workflow%20Control%20Tower%20demo">Discuss this
+                        demo</a>
                 </article>
             </div>
         </section>
@@ -161,24 +185,48 @@
                     roadmap creation. The focus is not abstract AI strategy. The focus is helping teams decide what is
                     worth building, what is risky, and what should happen next.
                 </p>
-                <div class="capability-tags">
-                    <span>Cloud architecture</span>
-                    <span>Data engineering</span>
-                    <span>AI automation</span>
-                    <span>Technical audits</span>
-                    <span>Roadmaps</span>
-                    <span>Engineering handover</span>
+                <div class="capability-cluster">
+                    <article>
+                        <span>Cloud</span>
+                        <h3>Architecture and modernization</h3>
+                        <p>Review Azure/AWS systems, service boundaries, reliability, security, cost, and delivery risk.
+                        </p>
+                    </article>
+                    <article>
+                        <span>Data</span>
+                        <h3>Platforms and workflows</h3>
+                        <p>Improve data quality, movement, ownership, and readiness for analytics or AI-enabled work.
+                        </p>
+                    </article>
+                    <article>
+                        <span>AI</span>
+                        <h3>Automation and prototypes</h3>
+                        <p>Design AI workflows with human review, operational visibility, and realistic production
+                            paths.</p>
+                    </article>
                 </div>
             </div>
             <div class="capabilities-panel">
                 <h3>Best-fit situations</h3>
-                <ul>
-                    <li>You have an AI idea but need to know if it is technically realistic.</li>
-                    <li>Your cloud or data architecture needs a senior second opinion.</li>
-                    <li>Your team needs a prototype before committing to a larger build.</li>
-                    <li>You need a clear roadmap that engineers can actually implement.</li>
-                </ul>
-                <a href="one_slider_capabilities.html" target="_blank" class="btn btn-quiet">View capabilities slide</a>
+                <div class="fit-list">
+                    <div>
+                        <span>01</span>
+                        <p>You have an AI idea but need to know if it is technically realistic.</p>
+                    </div>
+                    <div>
+                        <span>02</span>
+                        <p>Your cloud or data architecture needs a senior second opinion.</p>
+                    </div>
+                    <div>
+                        <span>03</span>
+                        <p>Your team needs a prototype before committing to a larger build.</p>
+                    </div>
+                    <div>
+                        <span>04</span>
+                        <p>You need a clear roadmap that engineers can actually implement.</p>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-quiet" data-capabilities-open>View capabilities</button>
             </div>
         </section>
 
@@ -238,6 +286,40 @@
             <span>Email: office@techgroei.com</span>
         </div>
     </footer>
+    <div id="capabilities-modal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-container" role="dialog" aria-modal="true" aria-label="TechGroei capabilities slide">
+            <button class="modal-close" type="button" aria-label="Close capabilities slide">&times;</button>
+            <iframe src="one_slider_capabilities.html" title="TechGroei capabilities slide"></iframe>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('capabilities-modal');
+            const openButton = document.querySelector('[data-capabilities-open]');
+            const closeButton = document.querySelector('.modal-close');
+
+            function openModal() {
+                modal.classList.add('is-open');
+                modal.setAttribute('aria-hidden', 'false');
+                document.body.classList.add('modal-open');
+            }
+
+            function closeModal() {
+                modal.classList.remove('is-open');
+                modal.setAttribute('aria-hidden', 'true');
+                document.body.classList.remove('modal-open');
+            }
+
+            openButton.addEventListener('click', openModal);
+            closeButton.addEventListener('click', closeModal);
+            modal.addEventListener('click', event => {
+                if (event.target === modal) closeModal();
+            });
+            document.addEventListener('keydown', event => {
+                if (event.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+            });
+        });
+    </script>
 </body>
 
 </html>
