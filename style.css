@@ -24,7 +24,7 @@ body {
     margin: 0;
     background: var(--bg);
     color: var(--text);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     line-height: 1.6;
 }
 
@@ -145,6 +145,24 @@ h3 {
     font-size: 1.16rem;
 }
 
+.best-fit-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.best-fit-tag {
+    font-size: 0.72rem;
+    border: 1px solid rgba(229, 185, 78, 0.45);
+    color: var(--accent-warm);
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+}
+
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
@@ -242,7 +260,7 @@ h3 {
 
 .offer-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 18px;
 }
 
@@ -328,10 +346,13 @@ h3 {
     margin-bottom: 8px;
 }
 
-.offer-card strong {
-    display: block;
+.offer-price {
     margin-top: auto;
     color: var(--accent-warm);
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
 }
 
 .card-kicker {
@@ -570,8 +591,11 @@ h3 {
 }
 
 @media (max-width: 980px) {
+    .offer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     .hero,
-    .offer-grid,
     .steps,
     .capabilities-section,
     .capability-cluster {
