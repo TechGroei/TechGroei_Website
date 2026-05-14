@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGroei - AI Control Tower</title>
+    <meta name="description" content="Visibility, governance, and human-in-the-loop oversight for AI workflows.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-icon"></div>
+                <span class="logo-text">TechGroei</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active"><span>📊</span> Dashboard</a>
+                <a href="#" class="nav-item"><span>⏳</span> Approval Queue <span class="nav-badge" id="queue-count">3</span></a>
+                <a href="#" class="nav-item"><span>📜</span> Audit Logs</a>
+                <a href="#" class="nav-item"><span>⚙️</span> Agent Config</a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <div class="avatar">AD</div>
+                    <div class="user-meta">
+                        <p class="user-name">Admin User</p>
+                        <p class="user-role">Operations Lead</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-view">
+            <header class="view-header">
+                <div class="header-titles">
+                    <h1>AI Workflow Control Tower</h1>
+                    <p>Live oversight of cross-functional AI agents.</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-ghost">Refresh Feed</button>
+                    <button class="btn-primary">+ Create Workflow</button>
+                </div>
+            </header>
+
+            <section class="metrics-grid">
+                <div class="metric-card">
+                    <p class="metric-label">System Health</p>
+                    <h2 class="metric-value text-success">99.8%</h2>
+                    <p class="metric-trend">Stable across 14 agents</p>
+                </div>
+                <div class="metric-card">
+                    <p class="metric-label">Human Interventions</p>
+                    <h2 class="metric-value">12</h2>
+                    <p class="metric-trend text-warning">↑ 4 from yesterday</p>
+                </div>
+                <div class="metric-card">
+                    <p class="metric-label">Avg. Latency</p>
+                    <h2 class="metric-value">1.4s</h2>
+                    <p class="metric-trend">P95 processing time</p>
+                </div>
+                <div class="metric-card">
+                    <p class="metric-label">Cost Saved (MTD)</p>
+                    <h2 class="metric-value">€4,250</h2>
+                    <p class="metric-trend text-success">Estimated efficiency</p>
+                </div>
+            </section>
+
+            <div class="content-split">
+                <section class="queue-section">
+                    <div class="section-header">
+                        <h3>Pending Approvals</h3>
+                        <span class="status-indicator live">Live Updates</span>
+                    </div>
+                    <div class="approval-list" id="approval-list">
+                        <!-- Injected -->
+                    </div>
+                </section>
+
+                <section class="feed-section">
+                    <div class="section-header">
+                        <h3>Agent Activity Feed</h3>
+                    </div>
+                    <div class="activity-feed" id="activity-feed">
+                        <!-- Injected -->
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <section class="review-sidebar" id="review-sidebar">
+            <div class="review-header">
+                <h2>Review Task</h2>
+                <button class="close-btn" id="close-review">×</button>
+            </div>
+            <div class="review-body" id="review-body">
+                <!-- Injected -->
+            </div>
+            <div class="review-footer">
+                <button class="btn-danger" id="reject-btn">Reject</button>
+                <div class="btn-group">
+                    <button class="btn-outline">Edit</button>
+                    <button class="btn-success" id="approve-btn">Approve & Send</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

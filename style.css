@@ -348,7 +348,7 @@ h3 {
 }
 
 .portfolio-grid article {
-    min-height: 300px;
+    min-height: 360px;
     display: flex;
     flex-direction: column;
 }
@@ -371,15 +371,24 @@ h3 {
     margin-top: 18px;
 }
 
-.portfolio-grid a {
+.demo-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
     margin-top: auto;
-    color: var(--accent-warm);
-    font-weight: 700;
-    text-decoration: none;
 }
 
-.portfolio-grid a:hover,
-.portfolio-grid a:focus {
+.discuss-link {
+    color: var(--muted);
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.discuss-link:hover,
+.discuss-link:focus {
+    color: var(--accent-warm);
     text-decoration: underline;
 }
 
