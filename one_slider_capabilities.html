@@ -32,7 +32,7 @@
         .slide {
             width: 1280px;
             height: 720px;
-            padding: 54px 64px;
+            padding: 48px 56px;
             background: var(--bg);
             color: var(--text);
             overflow: hidden;
@@ -44,7 +44,7 @@
             justify-content: space-between;
             gap: 32px;
             border-bottom: 3px solid var(--yellow);
-            padding-bottom: 26px;
+            padding-bottom: 22px;
         }
 
         .brand {
@@ -54,13 +54,14 @@
         }
 
         .mark {
-            width: 76px;
-            height: 76px;
+            width: 72px;
+            height: 72px;
         }
 
         h1 {
             margin: 0;
-            font-size: 44px;
+            max-width: 780px;
+            font-size: 42px;
             line-height: 1.05;
             letter-spacing: 0;
         }
@@ -72,7 +73,7 @@
         }
 
         .tag {
-            max-width: 290px;
+            max-width: 310px;
             color: var(--teal);
             font-size: 20px;
             font-weight: 700;
@@ -83,12 +84,12 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
-            margin-top: 38px;
+            margin-top: 34px;
         }
 
         .card {
-            min-height: 410px;
-            padding: 26px;
+            min-height: 420px;
+            padding: 25px;
             border: 1px solid var(--line);
             border-radius: 8px;
             background: var(--panel);
@@ -106,32 +107,41 @@
             padding-left: 22px;
             color: var(--text);
             font-size: 19px;
-            line-height: 1.5;
+            line-height: 1.45;
         }
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         .offer {
-            margin-bottom: 18px;
+            margin-bottom: 17px;
         }
 
         .offer strong {
             display: block;
             color: var(--yellow);
             font-size: 20px;
+            line-height: 1.1;
         }
 
         .offer span {
             color: var(--muted);
             font-size: 17px;
+            line-height: 1.25;
         }
 
         footer {
-            margin-top: 28px;
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            margin-top: 25px;
             color: var(--muted);
-            font-size: 18px;
+            font-size: 17px;
+        }
+
+        footer strong {
+            color: var(--yellow);
         }
     </style>
 </head>
@@ -149,68 +159,70 @@
                     <circle cx="198" cy="22" r="18" fill="#f4f1ea" />
                 </svg>
                 <div>
-                    <h1>TechGroei: Cloud, Data, and AI Engineering & Architecture</h1>
-                    <p class="subtitle">Turning technical complexity into tangible business value.</p>
+                    <h1>TechGroei: Cloud, Data, and AI Architecture</h1>
+                    <p class="subtitle">From unclear ideas to practical systems, prototypes, and roadmaps.</p>
                 </div>
             </div>
-            <div class="tag">Belgium-based. Global remote reach. Expert engineering.</div>
+            <div class="tag">Belgium-based. Remote delivery. Senior technical direction.</div>
         </header>
 
         <div class="columns">
             <article class="card">
-                <h2>Core Capabilities</h2>
+                <h2>Who We Help</h2>
                 <ul>
-                    <li>Cloud Engineering & Architecture</li>
-                    <li>Data Engineering & Architecture</li>
-                    <li>AI Automation & Agentic Workflows</li>
-                    <li>Technical Audits & Roadmaps</li>
-                    <li>Expert Advisory Services</li>
-                    <li>Fractional Architecture Support</li>
+                    <li>Founders validating AI, data, or cloud ideas</li>
+                    <li>CTOs and engineering leads needing a senior second opinion</li>
+                    <li>Product and operations teams with document-heavy workflows</li>
+                    <li>Consultancies needing architecture review or prototype support</li>
+                    <li>Teams that need progress without full-time hiring overhead</li>
                 </ul>
             </article>
 
             <article class="card">
-                <h2>Portfolio & Demos</h2>
+                <h2>What You Can Buy</h2>
                 <div class="offer">
-                    <strong>Automated Architectural Reviewer</strong>
-                    <span>AI-generated reviews from system descriptions.</span>
+                    <strong>Architecture & Maturity Audit</strong>
+                    <span>Risks, gaps, quick wins, and a 30-day technical roadmap.</span>
                 </div>
                 <div class="offer">
-                    <strong>AI Readiness Tool</strong>
-                    <span>Questionnaire-driven governance assessment.</span>
+                    <strong>GenAI Prototype Sprint</strong>
+                    <span>A working demo, feasibility view, and next-step implementation plan.</span>
                 </div>
                 <div class="offer">
-                    <strong>Document-to-Insight Workflow</strong>
-                    <span>Converts PDFs and emails into structured JSON.</span>
+                    <strong>Senior Architecture Support</strong>
+                    <span>Cloud, data, and AI decisions reviewed, shaped, and moved forward.</span>
                 </div>
                 <div class="offer">
-                    <strong>AI Workflow Control Tower</strong>
-                    <span>Dashboard for human-in-the-loop governance.</span>
+                    <strong>Technical Roadmap & Handover</strong>
+                    <span>Target architecture, delivery phases, and engineer-ready guidance.</span>
                 </div>
             </article>
 
             <article class="card">
-                <h2>Engagement Options</h2>
+                <h2>Proof Assets</h2>
                 <div class="offer">
-                    <strong>Architecture & Maturity Audit</strong>
-                    <span>Gap analysis, risks, and a clear delivery roadmap.</span>
+                    <strong>Automated Architectural Reviewer</strong>
+                    <span>Architecture, data, security, and production-readiness review.</span>
                 </div>
                 <div class="offer">
-                    <strong>GenAI Prototyping Sprint</strong>
-                    <span>Proof-of-concept for agentic workflows or RAG.</span>
+                    <strong>AI Readiness Tool</strong>
+                    <span>Practical assessment before investing in AI implementation.</span>
                 </div>
                 <div class="offer">
-                    <strong>Technical Advisory & Roadmaps</strong>
-                    <span>Expert strategy and detailed execution planning.</span>
+                    <strong>Document-to-Insight Workflow</strong>
+                    <span>Documents transformed into summaries, risks, questions, and structured output.</span>
                 </div>
                 <div class="offer">
-                    <strong>Engineering Handover</strong>
-                    <span>Solution design and implementation guidance.</span>
+                    <strong>AI Workflow Control Tower</strong>
+                    <span>Human review, monitoring, exceptions, and operational visibility for AI workflows.</span>
                 </div>
             </article>
         </div>
 
-        <footer>TechGroei | Cloud, Data, and AI Engineering & Architecture | Contact: office@techgroei.com</footer>
+        <footer>
+            <span><strong>Positioning:</strong> Practical AI, cloud, and data systems. Not AI theater.</span>
+            <span>office@techgroei.com</span>
+        </footer>
     </section>
 </body>
 
