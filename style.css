@@ -348,7 +348,7 @@ h3 {
 }
 
 .portfolio-grid article {
-    min-height: 360px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
 }
@@ -371,24 +371,15 @@ h3 {
     margin-top: 18px;
 }
 
-.demo-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+.portfolio-grid a {
     margin-top: auto;
-}
-
-.discuss-link {
-    color: var(--muted);
-    font-size: 0.88rem;
+    color: var(--accent-warm);
     font-weight: 700;
     text-decoration: none;
-    transition: color 0.2s ease;
 }
 
-.discuss-link:hover,
-.discuss-link:focus {
-    color: var(--accent-warm);
+.portfolio-grid a:hover,
+.portfolio-grid a:focus {
     text-decoration: underline;
 }
 
